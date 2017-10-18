@@ -134,15 +134,14 @@ class TicTacToe
 
     def winner
 
-      WIN_COMBINATIONS.each do |combo|
+      WIN_COMBINATIONS.find do |combo|
         if won?
-          if combo == "X"
-          return "X"
-        else combo == "O"
+          if board[win_combination[0]] === "X"
+            return "X"
+          else board[win_combination[0]] === "O"
             return "O"
           end
-        end
-      end
+        else return 
     end
 
     def play(board)
