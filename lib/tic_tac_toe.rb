@@ -138,8 +138,9 @@ class TicTacToe
         if won?
           if combo == "X"
           return "X"
-        else
-          return "O"
+          else
+            return "O"
+          end
         end
       end
     end
