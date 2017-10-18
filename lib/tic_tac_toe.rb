@@ -153,7 +153,7 @@ class TicTacToe
 
         if won?(@board)
           puts "Congratulations #{winner}!"
-        else draw?
+        elsif draw?
           puts "Cat's Game!"
         end
     end
