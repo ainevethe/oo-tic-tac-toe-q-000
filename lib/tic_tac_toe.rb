@@ -141,7 +141,7 @@ class TicTacToe
           else board[win_combination[0]] === "O"
             return "O"
           end
-        else return 
+        else return
         end
       end
     end
