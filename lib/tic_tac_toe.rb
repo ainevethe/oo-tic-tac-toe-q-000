@@ -132,7 +132,7 @@ class TicTacToe
       end
     end
 
-    def winner())
+    def winner()
 
       return @winside
 
