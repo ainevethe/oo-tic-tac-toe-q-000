@@ -142,6 +142,8 @@ class TicTacToe
             return "O"
           end
         else return 
+        end
+      end
     end
 
     def play(board)
