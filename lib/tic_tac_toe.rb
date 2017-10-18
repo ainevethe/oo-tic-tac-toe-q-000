@@ -132,7 +132,7 @@ class TicTacToe
       end
     end
 
-    def winner(board)
+    def winner
       if winning_combo = won?(board)
           return winning_combo.first
       end
