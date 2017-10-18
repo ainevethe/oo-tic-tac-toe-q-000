@@ -99,7 +99,7 @@ class TicTacToe
         if position_1 == "X" && position_2 == "X" && position_3 == "X"
           @winside = "X"
           return win_combination
-          
+
         elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
           @winside = "O"
           return win_combination
