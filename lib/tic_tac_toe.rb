@@ -135,7 +135,7 @@ class TicTacToe
 
       if @winside = "X"
         return "X"
-      else 
+      else
         return "O"
 
     end
