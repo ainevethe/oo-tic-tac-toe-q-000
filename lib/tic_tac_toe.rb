@@ -135,8 +135,9 @@ class TicTacToe
 
       if @winside == "X"
         return "X"
-      else
+      elsif @winside == "O"
         return "O"
+      else draw?
       end
 
     end
