@@ -124,7 +124,7 @@ class TicTacToe
       end
     end
 
-    def over?
+  def over?
       if full? || won? || draw?
         true
       else
@@ -132,14 +132,12 @@ class TicTacToe
       end
     end
 
-    def winner
-
-      def winner(board)
-        if winning_combo = won?(board)
-           return winning_combo.first
-        end
+    def winner(board)
+      if winning_combo = won?(board)
+          return winning_combo.first
       end
     end
+  end
 
     def play(board)
 
