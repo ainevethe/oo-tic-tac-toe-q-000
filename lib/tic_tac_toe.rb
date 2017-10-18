@@ -136,9 +136,9 @@ class TicTacToe
 
       WIN_COMBINATIONS.find do |combo|
         if won?
-          if board[win_combination[0]] === "X"
+          if @board[win_combination[0]] === "X"
             return "X"
-          else board[win_combination[0]] === "O"
+          else @board[win_combination[0]] === "O"
             return "O"
           end
         else return
