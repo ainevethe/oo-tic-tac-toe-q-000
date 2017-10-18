@@ -139,7 +139,7 @@ class TicTacToe
 
 
 
-    def play      
+    def play
         until over?
           turn
         end
