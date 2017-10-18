@@ -134,11 +134,7 @@ class TicTacToe
 
     def winner
 
-      if @winside == "X"
-        puts "X"
-      elsif @winside == "O"
-        puts "O"
-      end
+      return @winside
 
     end
 
