@@ -137,7 +137,7 @@ class TicTacToe
           return winning_combo.first
       end
     end
-  end
+
 
     def play(board)
 
