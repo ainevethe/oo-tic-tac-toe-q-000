@@ -133,13 +133,15 @@ class TicTacToe
     end
 
     def winner
-      WIN_COMBINATIONS.each do |combo|
-        if check(@board, combo, "X")
-          return "X"
-        elsif check(@board, combo, "O")
-          return "O"
-       end
-     end
+      if won?
+        win_combination = won?
+          if @board[win_combination[0]] == "X"
+            return "X"
+          else
+            return "O"
+          end
+        end
+      end
    end
 
 
