@@ -74,7 +74,6 @@ class TicTacToe
     end
 
     def turn_count
-
       counter = 0
 
       @board.each do |turn|
@@ -86,7 +85,6 @@ class TicTacToe
     end
 
     def won?
-
       WIN_COMBINATIONS.each do |win_combination|
         win_index_1 = win_combination[0]
         win_index_2 = win_combination[1]
@@ -97,11 +95,9 @@ class TicTacToe
         position_3 = @board[win_index_3]
 
         if position_1 == "X" && position_2 == "X" && position_3 == "X"
-          @winside = "X"
           return win_combination
 
         elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-          @winside = "O"
           return win_combination
         else
           false
@@ -111,9 +107,7 @@ class TicTacToe
     end
 
     def full?
-
         @board.all? {|cell| cell == "X" || cell == "O"}
-
     end
 
     def draw?
@@ -145,8 +139,7 @@ class TicTacToe
 
 
 
-    def play
-      
+    def play      
         until over?
           turn
         end
